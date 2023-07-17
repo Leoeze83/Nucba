@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Un lugar donde encontraras coleccionables LEGO relacionados a Star Wars " />
+
+    <!-- import de icon -->
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+
+    <!-- import de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <title>e-commerce basic</title>
+
+    <!-- icono en tab/pestaña -->
+    <link rel="shortcut icon" href="./assets/stornmtrooper.jpeg" />
+
+    <!-- import my CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- web -->
+  </head>
+  <body>
+    <header>
+      <a class="iconRef" href="./index.html" aria-label="to home">
+        <img class="icon" src="./assets/icono1.png" alt="icon" />
+      </a>
+      <h1>The Galactic Store</h1>
+
+      <!-- menù -->
+
+      <nav>
+        <i class="fas fa-bars"></i>
+        <ul class="dropdown">
+          <li><a class="menu" href="./index.html">HOME</a></li>
+          <li><a class="menu" href="./index2.html">PRODUCTS</a></li>
+          <li>
+            <a class="menu" href="./index3.html"> BUY <i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- cards -->
+
+    <h2>Coleccionables de StarWars en LEGO</h2>
+
+    <main>
+      <section class="products">
+        <div class="card" style="width: 18rem">
+          <span class="favorite"><i class="fas fa-star"></i> </span>
+          <img src="./assets/Caza Imperial.jpg" class="card-img-top" alt="Caza" />
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p>Precio :$</p>
+            <button class="buy">
+              <a href="./index3.html"> Agregar</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <span class="favorite"><i class="fas fa-star"></i> </span>
+          <img src="./assets/Halcon Milenario.jpg" class="card-img-top" alt="Milenario" />
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p>Precio :$</p>
+            <button class="buy">
+              <a href="./index3.html"> Agregar</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <span class="favorite"><i class="fas fa-star"></i> </span>
+          <img src="./assets/Nave Imperial.jpg" class="card-img-top" alt="Imperial" />
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p>Precio :$</p>
+            <button class="buy">
+              <a href="./index3.html"> Agregar</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <span class="favorite"><i class="fas fa-star"></i> </span>
+          <img src="./assets/X-Wing.jpg" class="card-img-top" alt="X-Wing" />
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p>Precio :$</p>
+            <button class="buy">
+              <a href="./index3.html"> Agregar</a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- carrousel -->
+      <h2>Jedi vs Sith</h2>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <!-- quitando el "w-100" de la class del img ... las redimensiona -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/carrusel/4.jpg" alt="1" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/carrusel/2.jpg" alt="2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/carrusel/7.jpg" alt="3" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/carrusel/5.jpg" alt="4" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/carrusel/8.jpg" alt="5" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+    <!-- script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  </body>
+
+  <footer>
+    <p>by VaderLoop-DEV &copy; for NUCBA</p>
+  </footer>
+</html>

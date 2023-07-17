@@ -1,0 +1,165 @@
+/* imports */
+
+/* paleta personalizada */
+:root {
+  --main-dark: #590f15;
+  --main-medium: #bf1f2c;
+  --main-fuente2: #f2b90c;
+  --main-fuente: #f2a30f;
+  --main-borde: #f28e13;
+}
+/* fuente  : COLOCAR LAS URL Y FORMAT ENTRE ""*/
+@font-face {
+  font-family: "STARWARS";
+  src: url("./assets/starwars/STARWARS.eot") format("eot"), url("./assets/starwars/STARWARS.svg") format("svg"), url("./assets/starwars/STARWARS.ttf") format("ttf"), url("./assets/starwars/STARWARS.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* font-family: "STARWARS", sans-serif; */
+
+/* edicion CSS del HTML */
+
+/* general */
+* {
+  padding: 1%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: "STARWARS", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+/* principal*/
+body {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1px;
+  background: url(./assets/fondo\ vader\ filtro.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  background-color: azure;
+}
+
+h1 {
+  color: var(--main-fuente2);
+  font-size: 2.5em;
+  font-weight: 900;
+  -webkit-text-stroke: 1px var(--main-dark);
+}
+
+nav {
+  display: flex;
+}
+
+/* menues*/
+
+.botonmenu {
+  background: none;
+  border-style: none;
+  border-radius: 1.5em;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.botonmenu:hover {
+  background-color: rgb(89, 89, 216);
+  border-radius: 1.5em;
+  transition: all 1s;
+}
+a {
+  text-decoration: none;
+  font-size: 2.5em;
+  color: var(--main-fuente);
+  font-weight: 600;
+  -webkit-text-stroke: 1px var(--main-dark);
+}
+
+/* textos */
+
+p {
+  color: rgb(250, 231, 122);
+  text-align: center;
+  font-size: 1.2em;
+}
+figcaption {
+  color: gold;
+  font-size: 1.3em;
+}
+
+/*personajes*/
+
+.anakin h2 {
+  font-size: 3em;
+  color: var(--main-fuente2);
+}
+.transform h2 {
+  font-size: 3em;
+  color: whitesmoke;
+}
+.darthvader h2 {
+  font-size: 3em;
+  color: var(--main-medium);
+  -webkit-text-stroke: 1px var(--main-dark);
+}
+h3 {
+  font-size: 1.6em;
+  color: var(--main-borde);
+  -webkit-text-stroke: 1px var(--main-dark);
+}
+h4 {
+  font-size: 1.5em;
+  color: var(--main-dark);
+  stroke: blue;
+  background: var(--main-fuente2);
+  border-radius: 0.5rem;
+  width: 10em;
+}
+/* imagenes*/
+
+/* logos */
+
+.logoprincipal {
+  width: 55%;
+  height: auto;
+  align-items: center;
+  filter: opacity(85%);
+}
+
+/* Formulario */
+
+.userinfo {
+  font-size: 1.3em;
+  color: var(--main-fuente);
+  font-weight: bold;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.suscribe {
+  background-color: orange;
+  margin-top: 20px;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* footer */
+
+.firma {
+  font-weight: bolder;
+  color: var(--main-fuente);
+}

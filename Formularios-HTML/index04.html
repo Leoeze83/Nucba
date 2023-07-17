@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Registro V.2</title>
+  </head>
+  <header>
+    <h1>Formulario de registro</h1>
+  </header>
+  <body>
+    <main>
+      <form action="/Ejercicios de Forms/index04.html" method="POST"></form>
+      <label for="Nombre">Nombre:</label>
+      <input type="text" name="Nombre" id="nombre" maxlength="20" />
+      <br />
+      <br />
+      <label for="Apellidos">Apellidos:</label>
+      <input type="text" name="Apellidos" id="apellidos" maxlength="20" />
+      <br />
+      <br />
+      <label for="Sexo">Sexo</label>
+      <input type="radio" name="hombre" id="nombre" value=" hombre" /> hombre <input type="radio" name="mujer" id="mujer" value="mujer" checked /> mujer <br /><br />
+      <label for="Correo">Correo:</label>
+      <input type="email" name="email" id="email" />
+      <br />
+      <br />
+      <label for="Poblacion">Poblacion</label>
+      <select name="ciudad" id="ciudad">
+        <option value="Alicante">Alicante</option>
+        <option value="Murcia">Maurcia</option>
+        <option value="Estepona">Estepona</option>
+      </select>
+      <br />
+      <br />
+      <label for="Descripcion">Descripcion:</label>
+      <textarea name="Descripcion" id="Descripcion" cols="30" rows="10"></textarea>
+      <br />
+      <br />
+      <input type="checkbox" name="suscribe" id="suscribe" value="suscribe" />Deseo recibir informacion sobre novedades y ofertas.
+      <br />
+      <br />
+      <input type="checkbox" name="acept" id="acept" value="acept" />Declaro haber leido y aceptar las condiciones gnerales del programa y la normativa sobre proteccion de datos.
+      <br />
+      <br />
+      <input type="submit" name="submit" />
+      <br /><br /><br />
+      <footer>&copy; by VaderLoop/Dev 2021 --> NUCBA . Form.V2</footer>
+    </main>
+  </body>
+</html>

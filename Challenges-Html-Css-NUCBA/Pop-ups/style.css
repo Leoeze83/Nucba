@@ -1,0 +1,252 @@
+/* imports */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* font-family: 'Roboto', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
+
+/* font-family: "Nanum Gothic Coding", monospace; */
+
+* {
+  margin: 1px;
+  padding: 1px;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+}
+body {
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+  display: flex;
+  flex-direction: column;
+}
+
+/* navbar */
+.logo {
+  background-color: rgba(0, 0, 0, 0.973);
+  filter: opacity(88%);
+  margin: 0% 0% 0% 5%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.836);
+  filter: opacity(80%);
+  height: auto;
+  width: 100%;
+}
+
+h1 {
+  background-color: transparent;
+  font-size: 3.5em;
+  font-family: "Nanum Gothic Coding", monospace;
+}
+/* para menu hamburguesa */
+.menu {
+  position: relative;
+  display: inline-block;
+  margin: 0% 1% 0% 0%;
+}
+.sections {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 5;
+  right: -30px;
+}
+.menu:hover .sections {
+  display: block;
+}
+.menu li,
+a {
+  padding: 1.5%;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-weight: 900;
+  font-family: "Nanum Gothic Coding", monospace;
+}
+.menu a:hover {
+  color: blue;
+}
+
+.fa-bars {
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+}
+
+/* pop-ups */
+
+i {
+  background-color: transparent;
+  color: rgb(168, 168, 168);
+  align-self: flex-end;
+  width: 15px;
+  height: 15px;
+  margin-right: 25px;
+  margin-top: 20px;
+}
+i:hover {
+  color: rgb(77, 144, 219);
+  cursor: pointer;
+}
+.pop-ups {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* pop-ups 1 */
+
+.pop1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 432px;
+  height: 389px;
+  margin-top: 80px;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 10%;
+}
+/* .pop1:hover {
+  border-style: solid;
+  border-color: rgb(77, 144, 219);
+} */
+.pop1 img {
+  background-color: transparent;
+  width: 140px;
+  height: 100px;
+  margin-top: 10.5px;
+  margin-bottom: 19px;
+  margin-left: 146px;
+  margin-right: 146px;
+}
+.pop1 p {
+  font-family: "Roboto", sans-serif;
+  width: 327px;
+  height: 72px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background-color: transparent;
+
+  margin-bottom: 16px;
+}
+button {
+  width: 201px;
+  height: 49px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #ed6755;
+  box-shadow: 0px 5px 10px #ed6755;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 70px;
+}
+
+/* pop-ups 2 */
+
+.pop2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 432px;
+  height: 389px;
+  margin-top: 1px;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 7%;
+}
+/* .pop2:hover {
+  border-style: solid;
+  border-color: rgb(77, 144, 219);
+} */
+.pop2 img {
+  background-color: transparent;
+  width: 82px;
+  height: 82px;
+  margin-top: 10.5px;
+  margin-bottom: 19px;
+  margin-left: 146px;
+  margin-right: 146px;
+}
+.pop2 p {
+  font-family: "Roboto", sans-serif;
+  width: 203px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background-color: transparent;
+  margin-bottom: 16px;
+}
+.pop2 button {
+  width: 201px;
+  height: 49px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #1c1b5e;
+  box-shadow: 0px 5px 10px #1c1b5e;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 70px;
+}
+
+/* footer */
+
+footer {
+  font-size: 20px;
+  color: whitesmoke;
+  font-weight: 900;
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
+/* mediaqueries */
+
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 2.8em;
+  }
+  .contenedor {
+    width: 15%;
+  }
+  .fa-bars {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  .logo,
+  .contenedor {
+    width: 75%;
+  }
+}
+@media (max-width: 360px) {
+  .contenedor {
+    width: 15%;
+    margin-left: 5%;
+  }
+  .logo {
+    width: 110%;
+  }
+  .fa-bars {
+    display: inline;
+  }
+  .sections {
+    display: none;
+  }
+  h1 {
+    font-size: small;
+  }
+}

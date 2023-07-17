@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Mascotas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Nos vamos todos..!!!</h1>
+    </header>
+    <div>
+      <img src="/assets/entrada.jfif" alt="ingreso" />
+    </div>
+    <main>
+      <h2>Formulario de Registro para tu Mascota</h2>
+
+      <h3>Completar los datos indicados:</h3>
+      <h2>Huesped responsable:</h2>
+      <form action="/HTML/05 -forms" method="POST"></form>
+      <label for="Nombre">Nombre ---></label>
+      <input type="text" name="Nombre" id="nombre" placeholder="ingresa tu nombre" maxLenght="30" />
+      <br />
+      <label for="Apellido"> Apellido ---> </label>
+      <input type="text" name="Apellido" id="apellido" placeholder="ingresa tu apellido" maxlength="30" />
+      <br />
+      <label for="Contacto">Numero de contacto:</label>
+      <input type="number" name="Numero" id="contacto" placeholder="Ej:+541122364758" />
+      <br />
+      <h2>Mascota:</h2>
+      <br />
+      <label for="NombreMasc">Nombre ---></label>
+      <input type="text" name="NombreMasc" id="nombreMasc" placeholder="Firulais" maxLenght="20" />
+      <br />
+      <h3>Tipo de raza:</h3>
+      <p>Seleccione la opcion adecuada:</p>
+      <select name="tamaño raza" id="tamaño raza">
+        <option value="Mini">Mini</option>
+        <option value="Pequeña">Pequeña</option>
+        <option value="Mediana">Mediana</option>
+        <option value="Grande">Grande</option>
+      </select>
+      <br />
+      <h2>Cuentanos como es...</h2>
+      <img src="/assets/preguntas.jfif" alt="como es??" />
+      <textarea name="descripcion" id="dscripcion" cols="30" rows="10" placeholder="Describe su aspecto fisico  y  Raza..."></textarea>
+      <br />
+      <h3>Periodo de hospedaje:</h3>
+      <p>Desde:</p>
+      <input type="date" name="ingreso" id="ingreso" />
+      <br />
+      <p>Hasta</p>
+      <input type="date" name="retiro" id="retiro" />
+      <br />
+      <br />
+      <h3>Compartenos tu selfie favorita con ella...</h3>
+      <input type="file" name="selfie" id="selfie" accept="image" />
+      <br />
+      <h3>Por ultimo &DownArrow; envianos tu solicitud...</h3>
+      <input type="submit" name="submit" value="ENVIAR" />
+      <br />
+      <img src="/assets/reervas.jfif" alt="envio" />
+      <br />
+      <br />
+    </main>
+    <footer>&copy;---> VaderLoop/Dev 2021 <---</footer>
+    <br />
+  </body>
+</html>
